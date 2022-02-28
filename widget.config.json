@@ -1,0 +1,17 @@
+{
+  "packageId": "wpkuqCzBqwSyN",
+  "spaceId": "spcUnEhN0PJcs",
+  "entry": "./src/index.tsx",
+  "name": {
+    "zh-CN": "URL 预览",
+    "en-US": "URL Preview"
+  },
+  "icon": "./package_icon.png",
+  "cover": "./cover.png",
+  "authorIcon": "./author_icon.png",
+  "description": {
+    "zh-CN": "可以预览一个指定的 URL，比如神奇表单的链接",
+    "en-US": "Preview a specific URL, such as the link to a vika form"
+  },
+  "globalPackageId": "wpkSybhcxsmGM"
+}
