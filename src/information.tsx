@@ -16,7 +16,7 @@ export const Information: React.FC = () => {
     );
   }else{
     return(
-      <div style={{width:"100%", height: "100%", fontSize: "1.6em", color: "#696969", backgroundColor: "rgb(245, 245, 245)", alignContent: "center", justifyContent: "center", alignItems: "center", display: "flex"}}>请展开小程序，在右侧配置区输入 URL</div>
+      <div style={{width:"100%", height: "100%", fontSize: "1.6em", color: "#696969", backgroundColor: "rgb(245, 245, 245)", paddingLeft: '14px', paddingRight: '14px', alignContent: "center", justifyContent: "center", alignItems: "center", display: "flex"}}>请展开小程序，在右侧配置区输入 URL</div>
     );
   }
 };
