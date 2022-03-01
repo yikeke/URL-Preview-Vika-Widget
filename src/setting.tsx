@@ -26,8 +26,8 @@ export const Setting: React.FC = () => {
     <div style={{ borderLeft: "1px solid #f2f2f2", flexShrink: 0, width: '300px', paddingLeft: '14px', paddingTop: '20px', paddingRight: '14px', backgroundColor: '#fff', overflow: 'auto' }}>
       <div style={{ paddingTop: '10px', paddingBottom: "10px", overflow: 'auto', fontSize: "16px" }}>URL 配置</div>
 
-      <div style={{ fontSize: "14px" }}>
-        <div style={{ paddingTop: '5px',paddingBottom: "10px", overflow: 'auto' }}>
+      <div style={{ marginTop: '10px', marginBottom: '10px', fontSize: "14px" }}>
+        <div>
         <RadioGroup name="btn-group-with-default" isBtn value={tab} block>
           <Radio value="1"  onChange={() => { setTab("1") }}>自定义 URL</Radio>
           <Radio value="2"  onChange={() => { setTab("2") }}>跟随 URL 单元格</Radio>
@@ -39,7 +39,7 @@ export const Setting: React.FC = () => {
         </div>
         {
           tab == "1" ? <div>
-            <div style={{ paddingTop: '5px',paddingBottom: "5px", overflow: 'auto' }}>预览的 URL 地址</div>
+            <div style={{ paddingTop: '16px', paddingBottom: "8px", overflow: 'auto' }}>预览的 URL 地址</div>
             <TextInput block onChange={ e => setInput(e.target.value) } value={input} placeholder="请输入一个 URL 地址" />
             <div style={{ paddingTop: '8px', paddingBottom: "10px", overflow: 'auto', fontSize: "16px", float:"right" }}><Button color="primary" size="small" onClick={ e => setText(input)}> 点击预览 </Button></div>
             <div style={{ marginTop: '8px', fontSize: "12px", color: "rgb(140, 140, 140)" }}>示例：https://u.vika.cn/31ndr</div>
@@ -52,7 +52,7 @@ export const Setting: React.FC = () => {
         }
         {
           tab == "2" ? <div>
-            <div style={{ paddingTop: '5px',paddingBottom: "5px", overflow: 'auto' }}>预览的 URL 地址</div>
+            <div style={{ paddingTop: '16px', paddingBottom: "8px", overflow: 'auto' }}>预览的 URL 地址</div>
             <div style={{ height: "40px", border: "1px solid #f2f2f2", fontSize: "14px", backgroundColor: "rgb(245, 247, 250)", color: "rgb(140, 140, 140)", padding: "8px 8px" }}>请去表格激活一个网址类型的单元格</div>
             <div style={{ marginTop: '8px', fontSize: "12px", color: "rgb(140, 140, 140)" }}>仅会在激活「网址类型」的单元格时渲染页面，激活其他类型的字段时不会渲染</div>
             {/* <div style={{ marginTop: '40px', fontSize: "13px" }}>
