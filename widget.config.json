@@ -10,8 +10,9 @@
   "cover": "./cover.png",
   "authorIcon": "./author_icon.png",
   "description": {
-    "zh-CN": "可以预览一个指定的 URL，比如神奇表单的链接",
-    "en-US": "Preview a specific URL, such as the link to a vika form"
+    "zh-CN": "提供「自定义 URL」和「跟随 URL 单元格」两种预览模式，支持手动输入一个 URL，也支持激活「网址字段」的单元格进行预览",
+    "en-US": "You can input a custom URL or activate a URL cell to preview the URL content"
   },
-  "globalPackageId": "wpkSybhcxsmGM"
+  "globalPackageId": "wpkSybhcxsmGM",
+  "sandbox": "true"
 }
