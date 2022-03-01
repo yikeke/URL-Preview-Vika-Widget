@@ -8,8 +8,8 @@ import { Storage } from './storage';
 
 const WidgetDeveloperTemplate: React.FC = () => {
   return (
-    <div style={{ display: 'flex', height: '100%' }}>
-      <div style={{ flexGrow: 1, overflow: 'auto', padding: '0 0px', height: '100%', overflowX: 'hidden', overflowY: 'hidden'}}>
+    <div style={{ display: 'flex', height: '100%', borderTop: "1px solid #f2f2f2"}}>
+      <div style={{ flexGrow: 1, overflow: 'auto', height: '100%', overflowX: 'hidden', overflowY: 'hidden'}}>
         <Information />
     </div><Setting /></div>
   );
