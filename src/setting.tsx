@@ -13,6 +13,7 @@ export const Setting: React.FC = () => {
   const [text, setText] = useCloudStorage('text', '');
   const [tab, setTab] = useCloudStorage('tab', '1');
   const [input, setInput] = useCloudStorage('input', '');
+  // const [input, setInput] = useState(''); 换成这行可以解决中间编辑跳光标的问题，但是刷新页面会清除 URL
 
   var [activeCell, setActiveCell] = useState<ICell | undefined>(activeCellSync);
   // 当前选中记录
