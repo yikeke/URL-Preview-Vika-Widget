@@ -3,14 +3,14 @@
   "spaceId": "spcUnEhN0PJcs",
   "entry": "./src/index.tsx",
   "name": {
-    "zh-CN": "URL 预览",
+    "zh-CN": "网址预览",
     "en-US": "URL Preview"
   },
   "icon": "./package_icon.png",
   "cover": "./cover.png",
   "authorIcon": "./author_icon.png",
   "description": {
-    "zh-CN": "提供「自定义 URL」和「跟随 URL 单元格」两种预览模式，支持手动输入一个 URL，也支持激活「网址字段」的单元格进行预览",
+    "zh-CN": "提供「自定义网址」和「跟随单元格」两种预览模式，支持手动输入一个网址，也支持激活「网址字段」的单元格进行预览",
     "en-US": "You can input a custom URL or activate a URL cell to preview the URL content"
   },
   "globalPackageId": "wpkSybhcxsmGM",

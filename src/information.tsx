@@ -16,13 +16,13 @@ export const Information: React.FC = () => {
   }else if( activeField?.type != FieldType.URL){
     defaultTip = "请激活一个网址类型的单元格"
   }else if(activeField?.type == FieldType.URL && !activeRecord.getCellValueString(activeCell.fieldId)){
-    defaultTip = "当前激活的 URL 单元格为空"
+    defaultTip = "当前激活的网址单元格为空"
   }else{
     if (activeCell.fieldId && tab == "2"){
       const activeCellString = activeRecord.getCellValueString(activeCell.fieldId) || "";
       setText(activeCellString);
     }
-    defaultTip = "请激活表中的一个网址类型的单元格xxx"
+    defaultTip = "请激活表中的一个网址类型的单元格"
   }
 
   return (
@@ -33,7 +33,7 @@ export const Information: React.FC = () => {
           <iframe style={{width:"100%", height: "100%", border: 0}} id="myframe" src={text} name="myframe" /> 
           : !text && tab =="2" ?
           <div style={{width:"100%", height: "100%", fontSize: "1.6em", color: "#696969", backgroundColor: "rgb(245, 245, 245)", paddingLeft: '14px', paddingRight: '14px', alignContent: "center", justifyContent: "center", alignItems: "center", display: "flex"}}> {defaultTip} </div>
-          : <div style={{width:"100%", height: "100%", fontSize: "1.6em", color: "#696969", backgroundColor: "rgb(245, 245, 245)", paddingLeft: '14px', paddingRight: '14px', alignContent: "center", justifyContent: "center", alignItems: "center", display: "flex"}}>请展开小程序，在右侧配置区指定 URL </div>
+          : <div style={{width:"100%", height: "100%", fontSize: "1.6em", color: "#696969", backgroundColor: "rgb(245, 245, 245)", paddingLeft: '14px', paddingRight: '14px', alignContent: "center", justifyContent: "center", alignItems: "center", display: "flex"}}>请展开小程序，在右侧配置区指定网址</div>
         }
     </div>
   );
