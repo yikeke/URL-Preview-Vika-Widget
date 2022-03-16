@@ -13,7 +13,8 @@ export const Setting: React.FC = () => {
   const [text, setText] = useCloudStorage('text', '');
   const [tab, setTab] = useCloudStorage('tab', '1');
   const [input, setInput] = useCloudStorage('input', '');
-  // const [input, setInput] = useState(''); 换成这行可以解决中间编辑跳光标的问题，但是刷新页面会清除 URL
+  // 换成下面这行可以解决中间编辑跳光标的问题，但是刷新页面会清除 URL
+  // const [input, setInput] = useState(''); 
 
   var [activeCell, setActiveCell] = useState<ICell | undefined>(activeCellSync);
   // 当前选中记录
@@ -27,7 +28,7 @@ export const Setting: React.FC = () => {
   return isShowingSettings ? (
     <div style={{ borderLeft: "1px solid #f2f2f2", flexShrink: 0, width: '300px', paddingLeft: '14px', paddingTop: '20px', paddingRight: '14px', backgroundColor: '#fff', overflow: 'auto' }}>
       {/* 等官方支持了 Tooltip 组件可以改造下这个问号按钮 */}
-      <div style={{ paddingTop: '10px', paddingBottom: "10px", overflow: 'auto', fontSize: "16px" }}>网址配置<span style={{color: 'rgb(140, 140, 140)', paddingLeft: "2px", verticalAlign:"middle"}} onClick={()=> window.open("https://www.baidu.com")} ><InformationLargeOutlined currentColor /></span></div>
+      <div style={{ paddingTop: '10px', paddingBottom: "10px", overflow: 'auto', fontSize: "16px" }}>网址配置<span style={{color: 'rgb(140, 140, 140)', paddingLeft: "2px", verticalAlign:"middle"}} onClick={()=> window.open("https://bbs.vika.cn/article/145")} ><InformationLargeOutlined currentColor /></span></div>
 
       <div style={{ marginTop: '10px', marginBottom: '10px', fontSize: "14px" }}>
         <div>
