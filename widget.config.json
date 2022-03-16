@@ -3,7 +3,7 @@
   "spaceId": "spcUnEhN0PJcs",
   "entry": "./src/index.tsx",
   "name": {
-    "zh-CN": "网址预览",
+    "zh-CN": "网址预览（URL Preview）",
     "en-US": "URL Preview"
   },
   "icon": "./package_icon.png",
@@ -13,7 +13,7 @@
   "authorLink": "https://github.com/yikeke/URL-Preview-Vika-Widget",
   "authorEmail": "yicoco17@gmail.com",
   "description": {
-    "zh-CN": "提供「自定义网址」和「跟随单元格」两种预览模式，支持手动输入一个网址，也支持激活「网址字段」的单元格进行预览",
+    "zh-CN": "支持手动输入一个网址或者点击「网址列」的单元格来预览网页内容",
     "en-US": "You can input a custom URL or activate a URL cell to preview the URL content"
   },
   "sandbox": "true"
