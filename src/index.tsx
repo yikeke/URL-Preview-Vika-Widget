@@ -1,7 +1,6 @@
 import React from 'react';
 import { initializeWidget } from '@vikadata/widget-sdk';
 import { Information } from './information';
-import { Selection } from './selection';
 import { Setting } from './setting';
 import { Control } from './control';
 import { Storage } from './storage';
