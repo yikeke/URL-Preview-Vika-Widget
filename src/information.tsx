@@ -1,6 +1,5 @@
 import { useCloudStorage, useActiveCell, CellValue, useRecord, useField, useActiveViewId, FieldType, ICell, useSettingsButton } from '@vikadata/widget-sdk';
 import React from 'react';
-import { Setting } from './setting';
 
 export const Information: React.FC = () => {
   // const [text] =useCloudStorage<[string, string][]>('text')
